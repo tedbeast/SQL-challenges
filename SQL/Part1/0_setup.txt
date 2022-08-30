@@ -1,0 +1,16 @@
+How do we set up our very own database on docker?
+First of all, verify that docker desktop is downloaded and is working.
+then, with docker desktop running, run this command in terminal:
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=P@SSWORD123" -p 1433:1433 --name sql1 mcr.microsoft.com/mssql/server:2019-latest
+
+In dbeaver, open a connection for a microsoft sql server.
+In connection settings, use host localhost, port 1433, database/schema master, username sa, password P@SSWORD123. Test connection and verify that connection is successful before clicking OK.
+
+Your docker container MUST be running to use the database!
+
+Right click on your DB connection on the left, navigate to sql editor and generate a new sql script. You should work on the practice problems in these sql scripts.
+
+Use the arrows on the left side of the editor to run sql commands. Please note that the top arrow will run a single line that your cursor is on, and the arrow inside a scroll will run the whole script, and break whenever you have an error. I recommend using ctrl+enter to run a single line quickly.
+
+DBeaver may not refresh automatically. If you are confused why your changes to eg create tables arent reflected in the connections screen on the left, press f5 to refresh dbeaver.

@@ -1,0 +1,1 @@
+This folder is just all about the initial setup for solving these sql problems, since docker, the mssql server container, and dbeaver altogether take a lot of work to set up. Once you add the sample data, please verify that it actually worked by looking at your tables (nested deeply under your connection on the left) and be sure to refresh with f5.

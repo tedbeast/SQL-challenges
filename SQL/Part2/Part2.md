@@ -1,0 +1,1 @@
+The extent that we need to know sql is largely just simple queries. So, in this chapter we'll be learning the basic SQL statements for CRUD operations (create read update delete) as well as some basics of filtering our queries to find more specific data.
